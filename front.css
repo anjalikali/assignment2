@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    font-family: "Open Sans";
+}
+.hero {
+    /* Sizing */
+    width: 100%;
+    height: 700px;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url('Images/d.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #40451b;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 0px;
+  padding-top: 0px;
+  font-size: 30px;
+  font-family: 'Open Sans',serif;
+  border: 0px solid white; /* CHANGE THIS LINE */
+  border-radius: 0px;
+}
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 3px;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 3px #70726F; /* CHANGE THIS LINE */
+  border-radius: 20px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("Images/b.jpg");
+
+    /* Set a specific height */
+    min-height: 700px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.text {
+  
+  font-size: 50px;
+    position: absolute;
+  bottom: 8px;
+  right: 16px;
+  top: 1200px;
+  color: white;
+}
+footer {
+        background: #061D25;
+        padding: 10px 0;
+        text-align: center;
+      }
+      footer a {
+        color: #70726F;
+        font-size: 20px;
+        padding: 10px;
+        border-right: 1px solid #70726F;
+        transition: all .5s ease;
+      }
+      footer a:first-child {
+        border-left: 1px solid #70726F;
+      }
+      footer a:hover {
+        color: white;
+      }
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 > div {
+  background-color: black;
+  margin: 1px;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+}
+.col1{
+  line-height: 50px;
+  position:fixed;
+}
+.col1 img {
+  width: 50px;
+  height: 50px;
+}
+
+@media all and (max-width:740px) {
+   /*Mobile View*/
+   .parallax .text
+   {
+     font-size: 25px;
+   }
+ }
+   @media all and (max-width:400px){
+   .flex-container .col1
+   {
+    line-height: 100px;
+   }
+ }
+   /*.hero.p {
+     font-size: .4em;
+   }
+
+   section.hero-inner
+   {
+     font-size: .4em;
+     padding:0;
+     text-align: center;
+   }
+
+   /*.col2 h1
+   {
+     font-size: 35px;
+
+   }
+   .col2 p
+   {
+     font-size : 20px;
+   }
+ }
+ @media all and (min-width: 700px)
+ {
+   /*Desktop view and over*/
+   /*section.section h2 {
+     font-size: 32px;
+   }
+   section.section p {
+     font-size: 20px;
+   }
+   section.section.parallax h1 {
+     font-size: 80px;
+     padding:0;
+     text-align: center;
+   }
+ }
